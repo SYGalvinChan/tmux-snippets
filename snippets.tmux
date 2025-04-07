@@ -11,4 +11,4 @@ snippet_key=$(get_option "@snippet_key" p)
 snippets_dir=$(get_option "@snippets_dir" "~/.snippets")
 
 mkdir -p ~/.snippets
-tmux bind p run-shell "$CURRENT_DIR/popup.sh"
+tmux bind p run-shell "$CURRENT_DIR/popup.sh ~/.snippets"
