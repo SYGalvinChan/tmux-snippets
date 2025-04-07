@@ -1,9 +1,11 @@
 # Tmux Snippets
 This plugin allows you to store commonly used commands in a `.yaml` file and access them using a tmux menu.
 
+This is especially useful if combined with git to allow multiple computers to share the same snippets directory
+
 ## Installation
 
-In your `~/.tmux.conf`
+Install using `TPM`:
 
 ```
 set -g @plugin 'SYGalvinChan/tmux-snippets'
