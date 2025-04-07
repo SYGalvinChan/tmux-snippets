@@ -10,5 +10,5 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 snippet_key=$(get_option "@snippet_key" p)
 snippets_dir=$(get_option "@snippets_dir" "~/.snippets")
 
-mkdir -p $snippets_dir
-tmux bind $snippet_key run-shell "$CURRENT_DIR/popup.sh"
+mkdir -p ~/.snippets
+tmux bind p run-shell "$CURRENT_DIR/popup.sh"
