@@ -47,6 +47,14 @@ function handle_command {
     tmux send-keys "C-m"
 }
 
+# Verify yq installed
+if ! command -v yq >/dev/null 2>&1; then
+    tmux display-message "yq is not installed"
+    echo "fatal: yq is not installed"
+    exit 1
+fi
+
+
 if [ -d "$1" ]; then
     handle_dir "$1"
 elif [ $# -eq 1 ]; then
