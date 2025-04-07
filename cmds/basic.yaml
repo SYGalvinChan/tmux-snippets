@@ -4,3 +4,7 @@
 - name: "Show Date"
   shortcut: "d"
   command: "date"
+- name: "Special Characters"
+  shortcut: "s"
+  command: | 
+    echo "hello world from snippets"
