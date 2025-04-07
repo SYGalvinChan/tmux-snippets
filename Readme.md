@@ -1,6 +1,15 @@
 # Tmux Snippets
 This plugin allows you to store commonly used commands in a `.yaml` file and access them using a tmux menu.
 
+## Installation
+
+In your `~/.tmux.conf`
+
+```
+set -g @plugin 'SYGalvinChan/tmux-snippets'
+```
+
+
 ## Options
 
 | Option Name | Default | Description|
@@ -9,7 +18,9 @@ This plugin allows you to store commonly used commands in a `.yaml` file and acc
 | `@snippets_dir` | `~/.snippets` | Directory where all the snippet files are stored |
 
 ## Snippet File
-A snippet file is a `.yaml` file containing a list of `snippet`. A `snippet` has 3 fields: `name`, `shortcut`, `command`.
+A snippet file is a `.yaml` file containing a list of `snippet`.
+
+A `snippet` has 3 fields: `name`, `shortcut`, `command`.
 
 Note:
 Take care to use yaml escape blocks for `command` if there are special characters.
