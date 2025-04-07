@@ -5,11 +5,14 @@ This is especially useful if combined with git to allow multiple computers to sh
 
 ## Installation
 
-Install using `TPM`:
+Install using (TPM)[https://github.com/tmux-plugins/tpm]:
 
 ```
 set -g @plugin 'SYGalvinChan/tmux-snippets'
 ```
+
+## Prerequisite
+This plugin depends on (yq)[https://github.com/mikefarah/yq]
 
 
 ## Options
@@ -31,3 +34,11 @@ Refer to `cmds/basic.yaml` for example.
 
 ## Snippet Directory
 This plugin will read snippet files from a directory. A nested directory structure is allowed. 
+```
+.snippet (can be configured)
+├── dir
+│   ├── file3.yaml
+│   └── file4.yaml
+├── file1.yaml
+└── file2.yaml
+```
