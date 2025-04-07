@@ -1,0 +1,6 @@
+- name: "List Files"
+  shortcut: "l"
+  command: "ls -la"
+- name: "Show Date"
+  shortcut: "d"
+  command: "date"
