@@ -12,7 +12,7 @@ function handle_dir {
     done
 
     if [ ${#menu_items[@]} -eq 0 ]; then
-        tmux display-message "empty selection, quiting"
+        tmux display-message "Empty directory: $dir"
     else
         tmux display-menu "${menu_items[@]}"
     fi
@@ -32,7 +32,7 @@ function handle_file {
     done
 
     if [ ${#menu_items[@]} -eq 0 ]; then
-        tmux display-message "empty selection, quiting"
+        tmux display-message "empty file: $file"
     else
         tmux display-menu "${menu_items[@]}"
     fi
