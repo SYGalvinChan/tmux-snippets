@@ -8,7 +8,7 @@ function handle_dir {
     for i in "${!items[@]}"; do
         menu_items+=("$(basename "${items[$i]}")")
         menu_items+=("$i")
-        menu_items+=("run '/Users/SP13360/Projects/snippets/popup.sh ${items[$i]}'")
+        menu_items+=("run '$0 ${items[$i]}'")
     done
 
     if [ ${#menu_items[@]} -eq 0 ]; then
@@ -28,7 +28,7 @@ function handle_file {
         shortcut=$(yq e ".[$i].shortcut" $file)
         menu_items+=("$name")
         menu_items+=("$shortcut")
-        menu_items+=("run '/Users/SP13360/Projects/snippets/popup.sh $file $i'")
+        menu_items+=("run '$0 $file $i'")
     done
 
     if [ ${#menu_items[@]} -eq 0 ]; then
