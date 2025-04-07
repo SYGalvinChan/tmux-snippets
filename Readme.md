@@ -27,5 +27,7 @@ A `snippet` has 3 fields: `name`, `shortcut`, `command`.
 Note:
 Take care to use yaml escape blocks for `command` if there are special characters.
 
+Refer to `cmds/basic.yaml` for example.
+
 ## Snippet Directory
 This plugin will read snippet files from a directory. A nested directory structure is allowed. 
